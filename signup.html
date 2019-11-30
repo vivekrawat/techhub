@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/font.css">
+  <link href="/css/signup.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<br>
+
+
+<div class="container-fluid claa"  >
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <span class="fon"><a class="navbar-brand" href="/">Techhub</a></span>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/">Home</a></li>
+        <li><a href="contactus">contact us</a></li>
+        <li><a href="aboutus">about</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav><br>
+
+
+  <h1 id="h">REGISTRATION</h1>
+
+  <br>
+<div class="container cla">
+  <form action="/c/register-controller" method="POST" name="reg">
+   <div class="form-group">
+    <p class="id2">Student name:<br><input type="text" class="cl1" name="name" ></p>
+
+
+    <p class="id2">gender:
+    <br><select type="text" value="MALE" name="gender" class="cl2">
+      <option>MALE</option>
+      <option>FEMALE</option>
+    </select>
+    </p>
+
+    <p class="id2">KIET Student Id:<br><input type="text" class="cl1" name="stdid"></p>
+
+    <p class="id2">
+    branch:
+    <br><select type="text" value="IT" name="branch" class="cl2">
+      <option>CSE</option>
+      <option>ME</option>
+      <option>IT</option>
+      <option>CE</option>
+      <option>EI</option>
+      <option>EN</option>
+    </select>
+    </p>
+
+    <p class="id2">
+    Year:
+    <br><select type="text" value="Third" name="year" class="cl2">
+      <option>First</option>
+      <option>Second</option>
+      <option>Third</option>
+      <option>Fourth</option>
+    </select>
+    </p>
+
+    <p class="id2">email_id:<br><input type="email" class="cl1" name="email"></p>
+
+    <p class="id2">mobile_no:<br><input type="number" class="cl1" name="number"></p>
+    <br>
+    <p class="id2"> Select your Area of expertise:<br>
+       <p class="id2">Field #1</p>
+      <select name="field1" value="None" class="cl2 " type="text">
+        <option>None</option>
+        <option>Web Development</option>
+        <option>Machine Learning</option>
+        <option>Competitive programming</option>
+        <option>IOT</option>
+        <option>Embedded Systems</option>
+        <option>AR-VR</option>
+      </select><br>
+
+      <p class="id2">Field #2</p>
+      <select name="field2" value="none" class="cl2">
+        <option>None</option>
+        <option>Web Development</option>
+        <option>Machine Learning</option>
+        <option>Competitive programming</option>
+        <option>IOT</option>
+        <option>Embedded Systems</option>
+        <option>AR-VR</option>
+      </select>
+    </p>
+    <p class="id2">password:<br><input type="password" class="cl1" name="password"></p>
+    <p class="id2">confirm password:<br><input type="password" class="cl1" name="cpassword"></p>
+    <br><br>
+    <p><input type="submit" value="submit" name="submit" id="id3"></p>
+  </div>
+  </form>
+</div>
+
+ <div class="footer">
+  <P>© 2019 Copyright</P>
+</div>
+</div>
+</body>
+</body><script src="js/signup.js"></script>
+</html>
