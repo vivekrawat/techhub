@@ -1,0 +1,69 @@
+
+    #id22{
+      font-size: 50px;
+      font-family:sans-serif;
+    }
+    .cla1
+    {
+      font-size:18px;
+      font-weight:700;
+      text-align: right;
+    }
+    #idd{
+      background-color: rgba(0.0,0,.4);
+    }
+
+    #id01{
+      text-align:center;
+      font-size:400%;
+      color:red;
+      }
+    .id2{
+      font-size:17px;
+      }
+      .cl1
+      {
+        color:black;
+        width:70%;
+
+        height:30px;
+        background-color: white;
+        border-style: inset;
+        border-width: 4px;
+      }
+      .cl2
+      {
+        width:30%;
+        height:30px;
+        font-size:17px;
+        
+      }
+      .cla
+      {
+      
+        margin-bottom:40px;
+        padding:50px;
+        align-content: center;
+      }
+    #id3{
+      padding-left:10px;
+      padding-right: 10px;
+      font-size:16px;
+      margin-top:0px;
+      font-weight:bold;
+    }
+    .l{
+      margin-top:0px;
+      background-color:rgba(0,0,0,.8);
+    }
+    .claa
+    {
+      background-color: rgba(51, 110, 123, .7);
+    }
+    #h
+    {
+      color:rgba(0, 0, 0, .7);
+      text-align:center;
+      font-size:70px;
+      font-weight: bold;
+    }
