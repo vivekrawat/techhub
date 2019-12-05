@@ -1,0 +1,37 @@
+#id22{
+      font-size: 50px;
+      color:rgba(192, 57, 43, 1);
+    }
+    #id23
+    {
+      font-size:40px;
+    }
+    #idd
+    {
+      background-color:rgba(51, 110, 123, .7);
+    }
+    .cl01
+    {
+    
+      background-color:white;
+    }
+    .btn1
+    {
+      padding:10px;
+      font-size:17px;
+      background-color:black;
+      color:white;
+    }
+    #email
+    {
+      width:60%;
+    }
+    #pwd
+    {
+      width:60%;
+    }
+    .aln
+    {
+      text-align: left;
+    }
+    
