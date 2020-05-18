@@ -1,0 +1,18 @@
+{
+  "name": "techhub",
+  "version": "1.0.0",
+  "description": "a social networking website for college campus",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vivek rawat",
+  "license": "ISC",
+  "dependencies": {
+    "cryptr": "^6.0.2",
+    "ejs": "^3.1.2",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "node-crypt": "^2.0.0"
+  }
+}

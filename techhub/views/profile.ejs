@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="/public/css/profile.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <%-include('partials/header2')%>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+              <div class="col-xs-12 col-sm-9">
+                
+                <!-- User profile -->
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                  <h4 class="panel-title">User profile</h4>
+                  </div>
+                  <div class="panel-body">
+                    <div class="profile__avatar">
+                      <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="...">
+                    </div>
+                    <div class="profile__header">
+                      <h4><%=data.name%> <small>Administrator</small></h4>
+                      <p class="text-muted">
+                        Welcome to Techhub
+                      </p>
+                      <br>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- User info -->
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                  <h4 class="panel-title">User info</h4>
+                  </div>
+                  <div class="panel-body">
+                    <table class="table profile__table">
+                      <tbody>
+                        <tr>
+                          <th><strong>gender</strong></th>
+                          <td><%=data.gender%></td>
+                        </tr>
+                        <tr>
+                          <th><strong>E-mail</strong></th>
+                          <td><%=data.email%></td>
+                        </tr>
+                        <tr>
+                          <th><strong>mobile number</strong></th>
+                          <td><%=data.number%></td>
+                        </tr>
+                        <tr>
+                            <th><strong>branch</strong></th>
+                            <td><%=data.branch%></td>
+                          </tr>
+                          <tr>
+                            <th><strong>Academic Year</strong></th>
+                            <td><%=data.year%></td>
+                          </tr>
+                          <tr>
+                            <th><strong>Field 1</strong></th>
+                            <td><%=data.field1%></td>
+                          </tr>
+                          <tr>
+                            <th><strong>Field 2</strong></th>
+                            <td><%=data.field2%></td>
+                          </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+        
+               
+        
+               
+        
+              </div>
+              <div class="col-xs-12 col-sm-3">
+                
+                
+                    <br><br>
+                    
+                      <h5 class="profile__contact-info-heading col">Select the field in which you are looking for the person</h5>
+                    <br>
+                    <form action="/c/after" method="POST" name="sel">
+                    <div class="form-group">
+                        <select class="form-control" type="text" name="field" value="None">
+                            <option class="hidden"  selected disabled>Please select from the folowing options</option>
+                            <option>None</option>
+                            <option>Web Development</option>
+                            <option>Machine Learning</option>
+                            <option>Competitive programming</option>
+                            <option>IOT</option>
+                            <option>Embedded Systems</option>
+                            <option>AR-VR</option>
+                        </select>
+                    </div>
+                    <input type="submit" class="btnRegister"  value="Submit" name="submit"/>
+                    </form>
+
+                 
+                </div>
+        
+              </div>
+            </div>
+        </div>
+
+</body>
+</html>

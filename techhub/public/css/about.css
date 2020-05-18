@@ -1,0 +1,30 @@
+body{
+    background-image: url("/public/images/5.jpeg");
+    background-size: cover;
+    font-family: lato;
+}
+html{
+  height: 100%;
+}
+h1{
+  font-family: cursive;
+  padding:10px;
+  color: #CCD1D1;
+  font-weight: 700;
+  font-size: 6em;
+ }
+ h5{
+  font-family: cursive;
+  color:rgba(255,255,255,.6);
+    font-size: 25px; 
+ }
+ hr{
+  color:white;
+  width: 400px;
+ }
+  .container{
+    width: 85%;
+  }
+  .cal{
+    color:rgba(255,255,255,.6);
+  }

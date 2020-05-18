@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/public/css/reg.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+<!------ Include the above in your HEAD tag ---------->
+    <title>Document</title>
+</head>
+<body>
+    <%-include('partials/header')%>
+
+    <div class="container-fluid register">
+        <div class="row">
+            <div class="col-md-3 register-left">
+                <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+                <h3>Welcome</h3>
+                <p>You are few seconds away from entering the college's best social platform.</p>
+                <a href="/login"><input type="submit" name="" value="Login"/></a><br/>
+            </div>
+            <div class="col-md-9 register-right">
+               
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <h3 class="register-heading">Registration Form</h3>
+
+
+                      <form action="/c/register-controller" method="POST" name="reg">
+                     <div class="row register-form">
+                        
+                            <div class="col-md-6">
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Name *" name="name" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control" value="" name="gender" type="text">
+                                        <option class="hidden"  selected disabled>Please select your Gender</option>
+                                        <option>Male</option>
+                                        <option>Female</option>
+                
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Student id *" name="stdid" value="" />
+                                </div>
+                                <div class="form-group" >
+                                    <select class="form-control" value="" name="branch" type="text">
+                                        <option class="hidden"  selected disabled>Please select your branch</option>
+                                        <option>CSE</option>
+                                        <option>ME</option>
+                                        <option>IT</option>
+                                        <option>CE</option>
+                                        <option>EI</option>
+                                        <option>EN</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control" value=""  name="year" type="text">
+                                        <option class="hidden"  selected disabled>Please select your Year</option>
+                                        <option>First</option>
+                                        <option>Second</option>
+                                        <option>Third</option>
+                                        <option>Fourth</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Your Email *" value="" type="email" name="email" />
+                                </div>
+                                
+                                
+                            </div>
+
+
+
+                            <div class="col-md-6">
+                                
+                                <div class="form-group">
+                                    <input type="number" minlength="10" maxlength="10" name="number" class="form-control" placeholder="Your Mobile number *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control" type="text" name="field1" value="None">
+                                        <option class="hidden"  selected disabled>Please select your primary area of expertise</option>
+                                        <option>None</option>
+                                        <option>Web Development</option>
+                                        <option>Machine Learning</option>
+                                        <option>Competitive programming</option>
+                                        <option>IOT</option>
+                                        <option>Embedded Systems</option>
+                                        <option>AR-VR</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <select class="form-control" type="text" name="field2" value="None">
+                                        <option class="hidden"  selected disabled>Please select your secondary area of expertise</option>
+                                        <option>None</option>
+                                        <option>Web Development</option>
+                                        <option>Machine Learning</option>
+                                        <option>Competitive programming</option>
+                                        <option>IOT</option>
+                                        <option>Embedded Systems</option>
+                                        <option>AR-VR</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Password *" value="" name="password" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control"  placeholder="Confirm Password *" value="" name="cpassword"/>
+                                </div>
+                                <input type="submit" class="btnRegister"  value="Register" name="submit"/>
+                            
+                          </div>
+                        </div>
+                    </form>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
