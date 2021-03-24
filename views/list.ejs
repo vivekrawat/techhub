@@ -18,11 +18,19 @@
         </h1><br>
         <ul class="list-group list-group-flush">
            
-            <%for(i=0;i<data.length;i++){%>
-                <li class="list-group-item">
-                    <a href="/profile/<%=data[i].email%>" ><%=data[i].name%></a>
-                    <p>e-mail:<%=data[i].email%></p>
-                </li>
+            <%for(i=0;i<data.length-1;i++){%>
+                <% if(data[i].email!=data[data.length-1].useremail){ %>
+                    <li class="list-group-item">
+                        <a href="/profile/<%=data[i].email%>" ><%=data[i].name%></a>
+                        <p>e-mail:<%=data[i].email%></p>
+    
+                        <form action="/c/messagesdis" method="POST">
+                        <input type="text" id="eemail" name="email" value=<%=data[i].email%> >
+                        <input type="text" id="eemail" name="email2" value=<%=data[data.length-1].useremail%> >
+                        <input type="submit" class="btnRegister"  value="Message" name="submit"/>
+                        </form>
+                    </li>
+                 <% } %>
                 <%}%>
         </ul>
     </div>
